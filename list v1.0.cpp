@@ -106,7 +106,7 @@ int& list::operator[](int ind)
 }
 
 int list::size() {
-    return size + 1;
+    return size;
 }
 
 int main() {
