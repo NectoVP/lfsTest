@@ -1,4 +1,5 @@
 #include <iostream>
+#include "./bmp-32-24-reader-writer/bmp.cpp"
 
 class list {
 private:
@@ -118,6 +119,8 @@ int list::top() {
 int main() {
     list ls;
     ls.push_back(5);
-    std::cout << ls.pop_back();
+    Image img;
+    img.Read("sample.bmp");
+    img.Export("new.bmp");
     return 0;
 }
