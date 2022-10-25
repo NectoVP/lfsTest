@@ -111,6 +111,10 @@ int list::size() {
     return msize;
 }
 
+int list::top() {
+    return this->tail->next->data;
+}
+
 int main() {
     list ls;
     ls.push_back(5);
