@@ -25,8 +25,8 @@ public:
     void push_back(int data);
     int pop_front();
     int pop_back();
-
-    int size() { return msize; }
+    
+    int size();
     int& operator [](int ind);
 };
 
@@ -105,6 +105,9 @@ int& list::operator[](int ind)
 
 }
 
+int list::size() {
+    return size + 1;
+}
 
 int main() {
     list ls;
